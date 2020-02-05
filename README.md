@@ -1,27 +1,33 @@
-# Universal
+# Angular Universal SSR
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
+Angular Universal permite renderizar el sitio web del lado del Servidor. Lo que permite obtener las siguientes ventajas:
 
-## Development server
+- Mejoramiento del SEO
+- Mejora en el rendimiento de dispositivos móviles
+- Mejorar la velocidad en la primera carga
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Generar proyecto:
 
-## Code scaffolding
+`ng new seo-ssr`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Comando para implementarlo:
 
-## Build
+`ng add @nguniversal/express-engine --clientProject seo-ssr`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Levantar sevidor de prueba:
 
-## Running unit tests
+`npm run build:ssr && npm run serve:ssr`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+App **sin** Angular Universal:
 
-## Running end-to-end tests
+![Sin SSR](https://i.ibb.co/vL9mwgy/Anotaci-n-2020-02-05-113938.png)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+App **con** Angular Universal:
 
-## Further help
+![Con SSR](https://i.ibb.co/JmT1zs6/Anotaci-n-2020-02-05-114343.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+El contenido del componente se muestra sin problemas dentro de la etiqueta app-root, lo que permitirá una mejor interpretación de los robots de los buscadores.
+
+[Documentación oficial](https://angular.io/guide/universal)
+
+[Server Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)

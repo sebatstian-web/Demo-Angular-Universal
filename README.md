@@ -20,11 +20,11 @@ Levantar sevidor de prueba:
 
 App **sin** Angular Universal:
 
-![Sin SSR](https://i.ibb.co/vL9mwgy/Anotaci-n-2020-02-05-113938.png)
+![Sin SSR](http://imgfz.com/i/0f2lexN.png)
 
 App **con** Angular Universal:
 
-![Con SSR](https://i.ibb.co/JmT1zs6/Anotaci-n-2020-02-05-114343.png)
+![Con SSR](http://imgfz.com/i/0APZ9ew.png)
 
 El contenido del componente se muestra sin problemas dentro de la etiqueta app-root, lo que permitirá una mejor interpretación de los robots de los buscadores.
 
